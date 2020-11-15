@@ -6,3 +6,6 @@ echo $total; // comment
 
 echo $name."不會顯示username";
 
+if($nume == "匿名"){
+    echo "you cannot see username";
+}
