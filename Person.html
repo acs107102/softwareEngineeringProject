@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <style>
+    body {
+        color:  #3c537c;
+        line-height: 30px;
+        font-weight: bold;
+        background: #7c838f;
+
+    }
+</style>
+</head>
+
+<body >
+  
+  <div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="#">Helen </a>
+				</div>
+				<nav>
+					<a href="#">home</a>  <a href="#">portfolio</a> 
+			</div>
+    </header>
+    <!-- 背景圖
+		<div class="PicArea">
+			<h2>Helen</h2>
+    </div>
+  -->
+		<div class="ContentArea"style="text-align: center;">
+			<div class="wrapper">
+      </div>
+      <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'PersonalProfile')">個人資料</button>
+      <button class="tablinks" onclick="openCity(event, 'CollectionCatalog')">收藏目錄</button>
+      <button class="tablinks" onclick="openCity(event, 'PostingRecord')">發文紀錄</button>
+    </div>
+    
+    <!-- Tab content -->
+    <div id="PersonalProfile" class="tabcontent " >
+      <h1>個人資料</h1>
+      <p>Welcome To Helen</p>
+      <div class="wrapper2">
+        <div class="PersonalProfileForm"style="text-align: center;">
+          <div class="title">
+            Personal Profile Form
+          </div>
+          <form>
+            <div class="FormWrap" style="text-align: center;">
+              <img src="imgs/logo.jpg" width="150px" line-height="100px" />
+              <div class="InputWrap">
+                <label>Select list</label>
+                  <select id = "myList">
+                    <option value = "yellow">yellow</option>
+                    <option value = "red">red</option>
+                    <option value = "blue">blue</option>
+                    <option value = "green">green</option>
+                  </select>
+              </div> 
+              <div class="InputWrap">
+                <label for="fname">暱稱</label>
+                <input type="text" id="fname">
+              </div> 
+              <div class="InputWrap">
+                <label for="email">帳號:</label>
+                <input type="text" id="email" placeholder="@mail.ntou.edu.tw" >
+              </div>
+              <div class="InputWrap">
+                <label for="password">密碼:</label>
+                <input type="password" id="password">
+              </div>
+              <div class="InputWrap">
+                <input type="submit" value="Edit" class="PersonEditBtn">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div id="CollectionCatalog" class="tabcontent">
+      <h1>收藏目錄</h1>
+      <p>Welcome To Helen</p>
+      <div class="InputWrap">
+        <label for="email">增加文章分類:</label>
+        <input type="text" id="post" >
+        <button type="button" style="margin: auto;" class="plus"> <i class="fas fa-plus"></i></i>   </button>
+
+      </div>
+      <div class="wrapper2" >
+        <div class="PersonalProfileForm">
+            <div class="title">
+              Personal Profile Form
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <div class="Page">
+                  <div class="PageName">
+                    <div class="value">
+                      <span class="currency"><span class="amount">企鵝版</span>
+                    </div>
+                  </div>
+                  <ul class="deals">
+                    <li>:):)</li>
+                  </ul><a href="#">more</a>
+                </div>
+              </div>
+              
+              <div class="col-md-4 col-sm-4">
+                <div class="Page">
+
+                  <div class="PageName">
+                    <div class="value">
+                      <span class="currency"><span class="amount">告白版</span>
+                    </div>
+                  </div>
+                  <ul class="deals">
+                    <li>:):)</li>
+                    
+                  </ul><a href="#">more</a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="Page">
+                  <div class="PageName">
+                    <div class="value">
+                      <span class="currency"><span class="amount">漫威版</span>
+                    </div>
+                  </div>
+                  <ul class="deals">
+                    <li>:):)</li>
+                    
+                  </ul><a href="#">more</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="PostingRecord" class="tabcontent" >
+      <h1>發文紀錄</h1>
+      <p>Welcome To Helen</p>
+      <div class="wrapper2">
+        <div class="PersonalProfileForm">
+          <div class="title">
+            Personal Profile Form
+          </div>
+          <div class="container">
+
+            <div class="PostBox">
+              <div class="row">
+                  <div class="PostBox1">
+                  漫威版  美國隊長也太帥了吧!
+                  </div>
+                  <button type="button" style="margin: auto;">  Edit !  </button>
+                  <button type="button" style="margin: auto;">Delete!</button>
+
+                </div>
+              </div>
+            <div class="PostBox">
+              <div class="row">
+                <div class="PostBox1">
+                  告白版 求校隊女籃ig
+
+                  </div>
+                  <button type="button" style="margin: auto;"> Edit ! </button>
+                  <button type="button" style="margin: auto;">Delete!</button>
+              </div>
+            </div>
+            <div class="PostBox">
+              <div class="row">
+              <div class="PostBox1">
+                課程版 #詢問 大一資工課程
+                </div>
+                <button type="button" style="margin: auto;">  Edit !  </button>
+                <button type="button" style="margin: auto;">Delete!</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="js/tab.js"></script>
+</html>

@@ -1,0 +1,374 @@
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(161, 168, 228);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(226, 174, 32);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 40px 100px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	text-align: center;
+	background-color: brown;
+}
+.wrapper {
+	width: 1170px;
+    margin: 0 auto;
+    padding-left: 20
+}
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+/*
+.PicArea {
+	width: 100%;
+	height: 500px;
+	position: fixed;
+	top: 100px;
+	background-image: url(https://www.news.ucsb.edu/sites/default/files/images/2019/underwater-ocean-surface.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.PicArea h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+}
+*/
+.ContentArea {
+	width: 100%;
+	position: relative;
+	top: 100px;
+	/*background: #7c838f;*/
+	height:670px;
+}
+.ContentArea h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.ContentArea p {
+	padding: 2% 0px;/*padding-top (上)
+                    padding-right (右)
+                    padding-bottom (下)
+                    padding-left (左)*/
+	font-family: poppins;/*字型*/
+    line-height: 30px;/*每一行之間的空間*/
+    letter-spacing:8px;/*字寬*/
+    
+}
+/* 註冊那*/
+
+
+body{
+	background: #cbcfe0;
+}
+ 
+.wrapper2{
+	min-height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.PersonalProfileForm{
+	background: #545871;
+	padding: 5px;
+	border-radius: 5px;
+	width: 600px;
+}
+
+.PersonalProfileForm .title{
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #ebd0ce;
+	letter-spacing: 5px;
+	font-weight: 700;
+}
+
+.FormWrap{
+	margin-top: 10px;
+}
+
+.FormWrap .InputWrap{
+	margin-bottom: 15px;
+}
+
+
+
+.FormWrap .InputWrap label{
+	display: block;
+	margin-bottom: 3px;
+	color: #9597a6;
+}
+
+.FormWrap .InputGroup{
+	display: flex;
+	justify-content: space-between;
+}
+
+.FormWrap .InputGrourp  input[type="text"]{
+	width: 150px;
+}
+
+.FormWrap  input[type="text"] .FormWrap input[type="password"]{
+	width: 80%;
+	border-radius: 3px;
+	border: 1px solid #9597a6;
+	padding: 10px;
+	outline: none;
+}
+
+.FormWrap  input[type="text"]:focus{
+	border-color: #ebd0ce;
+}
+
+.FormWrap ul{
+	background: rgb(76, 93, 170);
+	padding: 8px 10px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.FormWrap .PersonEditBtn{
+	width: 20%;
+	background: #4a4374;
+	padding: 10px;
+	border: 0;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    cursor: pointer;
+    
+}
+
+.FormWrap .PersonEditBtn:hover{
+	background: #08163d;
+}
+/*收藏目錄*/
+
+.pricing-area {
+	padding: 80px 0;
+	width: 200px;
+	line-height: 10%;
+
+}
+.Page {
+	padding-bottom: 25px;
+	background: #fff;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+}
+.Page a {
+	background: rgb(80, 78, 82);
+	color: #fff;
+	padding: 15px 30px;
+	text-decoration: none;
+	border-radius: 25px;
+	display: inline-block;
+}
+.Page:hover {
+	cursor: pointer;
+	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+	transform: scale(1.04);
+}
+.Page::before {
+	content: "";
+	width: 100%;
+	height: 350px;
+	background: rgb(49, 6, 70);
+	position: absolute;
+	top: -150px;
+	left: 0;
+	transform: skewY(-20deg);
+}
+.Page .price-header {
+	padding: 20px 20px 60px;
+	text-align: left;
+	position: relative;
+}
+.Page .title {
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+}
+.Page .PageName {
+	display: inline-block;
+	width: 170px;
+	height: 110px;
+	padding: 15px;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+}
+.Page .value {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border: 5px solid #262626;
+	border-top: none;
+	border-bottom: none;
+	z-index: 1;
+	position: relative;
+}
+.Page .value::before, .Page .value::after {
+	content: "";
+	width: 97px;
+	height: 97px;
+	background: #fff;
+	border: 5px solid #262626;
+	border-bottom: none;
+	border-right: none;
+	position: absolute;
+	top: -48px;
+	left: 50%;
+	z-index: -1;
+	transform: translateX(-50%) scaleY(0.5) rotate(45deg);
+}
+.Page .value::after {
+	border-right: 5px solid #262626;
+	border-bottom: 5px solid #262626;
+	border-top: none;
+	border-left: none;
+	top: auto;
+	bottom: -48px;
+}
+.Page .currency {
+	display: inline-block;
+	font-size: 30px;
+	margin-top: 7px;
+	vertical-align: top;
+}
+.Page .amount {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 65px;
+}
+.Page .amount span {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: normal;
+	vertical-align: top;
+	margin-top: -7px;
+}
+.Page .month {
+	display: block;
+	font-size: 16px;
+	line-height: 0;
+}
+.Page .deals {
+	padding: 70px 0 0 0;
+	margin-bottom: 20px;
+	list-style: none;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+}
+.Page .deals li {
+	padding: 7px 0;
+	font-size: 16px;
+	color: #808080;
+	position: relative;
+}
+@media only screen and (max-width: 990px) {
+	.Page {
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.Page:before {
+		transform: skewY(-15deg);
+	}
+	.Page .title {
+		font-size: 22px;
+	}
+}
+.PostBox{
+	background-color: #ebd0ce;
+	padding: 5%;
+}
+.PostBox1{
+	background-color: aliceblue;
+	width: 300px;
+	
+}
