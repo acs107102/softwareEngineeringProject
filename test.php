@@ -36,6 +36,11 @@ foreach($arr as $idx => $val){
 
     }
 }
+/*
+數值為NULL的時候，isset會把變數當成不存在；但empty不會
+變數值為0的時候，isset判斷的是變數，所以回傳true；但是empty會把0當成空值，所以也會回傳true
+變數值為空字串的時候，isset判斷的是變數，所以回傳true；empty判斷的是值，所以回傳true
+*/
 ?>
 <?php
 ?>
