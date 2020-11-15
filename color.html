@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://www.jq22.com/demo/colpick-jQuery-Color-Picker-master/js/colpick.js"></script>
+<link rel="stylesheet" href="http://www.jq22.com/demo/colpick-jQuery-Color-Picker-master/css/colpick.css" type="text/css" />
+<style>
+#tp_color {
+	margin:0;
+	padding:0;
+	border:1px #ccc solid;
+	width:70px;
+	height:20px;
+	border-right:20px solid green;
+	line-height:20px;
+}
+</style>
+<body>
+<table>
+<tr>
+    <td class="tdlh30" style="width:20%;">选择颜色：</td>
+    <td>
+    <input type="text" id="tp_color" name="tp_color" maxlength="6" />
+    </td>
+</tr>
+</table>
+<script>
+$('#tp_color').colpick({
+	layout:'hex',
+	submit:0,
+	colorScheme:'dark',
+	onChange:function(hsb,hex,rgb,el,bySetColor){
+		$(el).css('border-color','#'+hex);
+		if(!bySetColor) $(el).val(hex);
+	}
+}).keyup(function(){
+	$(this).colpickSetColor(this.value);
+});
+</script>
+</body>
+</head>
+</html>
