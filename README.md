@@ -3,3 +3,7 @@
 ## [index.php](https://github.com/ytchao0234/softwareEngineeringProject/blob/water/index.php)
 + example
 ## [test.php](https://github.com/ytchao0234/softwareEngineeringProject/blob/water/test.php)
+
+## 其他
+### 短網址
++ https://lihi.io/
