@@ -6,15 +6,19 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://www.jq22.com/demo/colpick-jQuery-Color-Picker-master/js/colpick.js"></script>
+  <link rel="stylesheet" href="http://www.jq22.com/demo/colpick-jQuery-Color-Picker-master/css/colpick.css" type="text/css" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <style>
     body {
         color:  #3c537c;
         line-height: 30px;
         font-weight: bold;
-        background: #7c838f;
+        background: #737e91;
 
     }
+   
 </style>
 </head>
 
@@ -54,35 +58,54 @@
           <div class="title">
             Personal Profile Form
           </div>
+          <br>
           <form>
             <div class="FormWrap" style="text-align: center;">
-              <img src="imgs/logo.jpg" width="150px" line-height="100px" />
+              <!--<img src="imgs/logo.jpg" width="150px" line-height="100px" />-->
+              <div type="text" id="color" name="color" >
+                <script>
+                $('#color').colpick({
+                 layout:'hex',
+                 submit:0,
+                 colorScheme:'dark',
+                 onChange:function(hsb,hex,rgb,el,bySetColor){
+                  $(el).css('border-color','#'+hex);
+                  //if(!bySetColor) $(el).val(hex);
+                 }
+                }).keyup(function(){
+                 $(this).colpickSetColor(this.value);
+                });
+                </script>
+              
+            </div>
+            <br>
               <div class="InputWrap">
-                <label>Select list</label>
-                  <select id = "myList">
-                    <option value = "yellow">yellow</option>
-                    <option value = "red">red</option>
-                    <option value = "blue">blue</option>
-                    <option value = "green">green</option>
-                  </select>
-              </div> 
-              <div class="InputWrap">
-                <label for="fname">暱稱</label>
-                <input type="text" id="fname">
-              </div> 
+                <label for="fname">暱稱:</label>
+                <div row>
+                  <input type="text" id="fname">
+                  <input type="button" value="Edit" class="PersonEditBtn">
+                </div>
+                </div> 
               <div class="InputWrap">
                 <label for="email">帳號:</label>
-                <input type="text" id="email" placeholder="@mail.ntou.edu.tw" >
+                <div row>
+                  <input type="text" id="email" placeholder="@mail.ntou.edu.tw" >
+                  <input type="button" value="Edit" class="PersonEditBtn">
+              </div>
               </div>
               <div class="InputWrap">
                 <label for="password">密碼:</label>
-                <input type="password" id="password">
+                <div row>
+                  
+                  <input type="password" id="password">
+                  <input type="button" value="Edit" class="PasswordEditBtn">
+                </div>
               </div>
-              
+              <!--
               <div class="InputWrap">
                 <input type="button" value="Edit" class="PersonEditBtn">
               </div>
-              
+              -->
               
             </div>
           </form>
@@ -110,7 +133,7 @@
                 <div class="Page">
                   <div class="PageName">
                     <div class="value">
-                      <span class="currency"><span class="amount">企鵝版</span>
+                      <span class="currency"><span class="WhichPage">企鵝版</span>
                     </div>
                   </div>
                   <ul class="deals">
@@ -124,7 +147,7 @@
 
                   <div class="PageName">
                     <div class="value">
-                      <span class="currency"><span class="amount">告白版</span>
+                      <span class="currency"><span class="WhichPage">告白版</span>
                     </div>
                   </div>
                   <ul class="deals">
@@ -137,7 +160,7 @@
                 <div class="Page">
                   <div class="PageName">
                     <div class="value">
-                      <span class="currency"><span class="amount">漫威版</span>
+                      <span class="currency"><span class="WhichPage">漫威版</span>
                     </div>
                   </div>
                   <ul class="deals">

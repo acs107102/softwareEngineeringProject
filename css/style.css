@@ -1,10 +1,11 @@
+/*tab*/
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
-/* Style the buttons that are used to open the tab content */
+/* tab 按鈕 */
 .tab button {
   background-color: inherit;
   float: left;
@@ -16,12 +17,12 @@
 }
 
 
-/* Change background color of buttons on hover */
+/* tab 碰到 */
 .tab button:hover {
   background-color: rgb(161, 168, 228);
 }
 
-/* Create an active/current tablink class */
+/* tab 目前的頁面 */
 .tab button.active {
   background-color: rgb(226, 174, 32);
 }
@@ -46,12 +47,9 @@
 	margin: 0;
 	padding: 0;
 }
-body {
-	text-align: center;
-	background-color: brown;
-}
+
 .wrapper {
-	width: 1170px;
+	width: 100%;
     margin: 0 auto;
     padding-left: 20
 }
@@ -62,11 +60,13 @@ header {
 	z-index: 10;
 	position: fixed;
 }
+/*Helen*/
 .logo {
 	width: 30%;
 	float: left;
 	line-height: 100px;
 }
+
 .logo a {
 	text-decoration: none;
 	font-size: 30px;
@@ -74,6 +74,7 @@ header {
 	color: #fff;
 	letter-spacing: 5px;
 }
+/*home portfolio*/
 nav {
 	float: right;
 	line-height: 100px;
@@ -86,30 +87,11 @@ nav a {
 	margin: 0 10px;
 	color: #fff;
 }
-/*
-.PicArea {
-	width: 100%;
-	height: 500px;
-	position: fixed;
-	top: 100px;
-	background-image: url(https://www.news.ucsb.edu/sites/default/files/images/2019/underwater-ocean-surface.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-}
-.PicArea h2 {
-	padding-top: 8%;
-	font-size: 70px;
-	font-family: poppins;
-	text-transform: uppercase;
-	color: #fff;
-}
-*/
+/*tab以下*/
 .ContentArea {
 	width: 100%;
 	position: relative;
 	top: 100px;
-	/*background: #7c838f;*/
 	height:670px;
 }
 .ContentArea h2 {
@@ -119,6 +101,7 @@ nav a {
 	font-size: 40px;
 	margin: 0;
 }
+/*Welcome TO Helen*/
 .ContentArea p {
 	padding: 2% 0px;/*padding-top (上)
                     padding-right (右)
@@ -131,18 +114,14 @@ nav a {
 }
 /* 註冊那*/
 
-
-body{
-	background: #cbcfe0;
-}
- 
+ /*Personal Profile From 原本左右邊再想要不要加東西*/
 .wrapper2{
 	min-height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
+ /*Personal Profile From*/
 .PersonalProfileForm{
 	background: #545871;
 	padding: 5px;
@@ -158,11 +137,11 @@ body{
 	letter-spacing: 5px;
 	font-weight: 700;
 }
-
+/* /*Personal Profile From以下的內容*/
 .FormWrap{
 	margin-top: 10px;
 }
-
+/*每個輸入的欄位ex 暱稱:*/
 .FormWrap .InputWrap{
 	margin-bottom: 15px;
 }
@@ -171,29 +150,22 @@ body{
 
 .FormWrap .InputWrap label{
 	display: block;
-	margin-bottom: 3px;
+	margin-bottom: 5px;
 	color: #9597a6;
 }
 
-.FormWrap .InputGroup{
-	display: flex;
-	justify-content: space-between;
-}
 
-.FormWrap .InputGrourp  input[type="text"]{
-	width: 150px;
-}
 
 .FormWrap  input[type="text"] .FormWrap input[type="password"]{
 	width: 80%;
 	border-radius: 3px;
-	border: 1px solid #9597a6;
+	border: 1px solid #1c2988;
 	padding: 10px;
 	outline: none;
 }
-
+/*當點擊到此input 但感覺沒用*/
 .FormWrap  input[type="text"]:focus{
-	border-color: #ebd0ce;
+	border-color: #e0cfce;
 }
 
 .FormWrap ul{
@@ -204,10 +176,21 @@ body{
 	justify-content: center;
 }
 
-
+/*edit按鈕*/
 .FormWrap .PersonEditBtn{
-	width: 20%;
-	background: #4a4374;
+	width: 10%;
+	background: #8f8ba5;
+	padding: 10px;
+	border: 0;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    cursor: pointer;
+    
+}
+.FormWrap .PasswordEditBtn{
+	width: 10%;
+	background: #8f8ba5;
 	padding: 10px;
 	border: 0;
 	border-radius: 3px;
@@ -218,16 +201,11 @@ body{
 }
 
 .FormWrap .PersonEditBtn:hover{
-	background: #08163d;
+	background: #d1c19dbb;
 }
 /*收藏目錄*/
 
-.pricing-area {
-	padding: 80px 0;
-	width: 200px;
-	line-height: 10%;
-
-}
+/*每個板*/
 .Page {
 	padding-bottom: 25px;
 	background: #fff;
@@ -249,6 +227,7 @@ body{
 	cursor: pointer;
 	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
 	transform: scale(1.04);
+	transform: rotateY(360deg);
 }
 .Page::before {
 	content: "";
@@ -260,17 +239,20 @@ body{
 	left: 0;
 	transform: skewY(-20deg);
 }
-.Page .price-header {
-	padding: 20px 20px 60px;
-	text-align: left;
-	position: relative;
+/*增加文章分類的+按鈕*/
+.InputWrap button{
+	background-color: rgb(172, 151, 185);
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+	width: 10%;
 }
-.Page .title {
-	font-size: 30px;
-	font-weight: 600;
-	color: #fff;
-	text-transform: uppercase;
-	margin: 0;
+.InputWrap button:hover{
+	background-color: rgb(167, 114, 173);
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+	width: 10%;
 }
 .Page .PageName {
 	display: inline-block;
@@ -319,24 +301,20 @@ body{
 	margin-top: 7px;
 	vertical-align: top;
 }
-.Page .amount {
+.Page .WhichPage {
 	display: inline-block;
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 65px;
 }
-.Page .amount span {
+.Page .WhichPage span {
 	display: inline-block;
 	font-size: 30px;
 	font-weight: normal;
 	vertical-align: top;
 	margin-top: -7px;
 }
-.Page .month {
-	display: block;
-	font-size: 16px;
-	line-height: 0;
-}
+
 .Page .deals {
 	padding: 70px 0 0 0;
 	margin-bottom: 20px;
@@ -363,12 +341,37 @@ body{
 		font-size: 22px;
 	}
 }
+/*發文紀錄*/
+/*粉紅那塊*/
 .PostBox{
-	background-color: #ebd0ce;
+	background-color: #dfd7d7;
 	padding: 5%;
 }
+/*文章名子:漫威版 美國隊長也太帥了吧!那欄*/
 .PostBox1{
 	background-color: aliceblue;
 	width: 300px;
+	border-radius: 5px;
 	
+}
+.PostBox button/*發文紀錄的按鈕*/{
+	background-color: rgb(216, 192, 196);
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+	width: 10%;
+}
+.PostBox button:hover{
+	background-color: rgb(190, 136, 149);
+	border-radius: 3px;
+	border: 0;
+	cursor: pointer;
+	width: 10%;
+}
+#color {
+	position: relative;
+	margin-inline-start: 41% ;
+	width:100px;
+	height:100px;
+	border-right:100px solid green;
 }
