@@ -188,6 +188,10 @@ nav a {
     cursor: pointer;
     
 }
+
+.FormWrap .PersonEditBtn:hover{
+	background: #d1c19dbb;
+}
 .FormWrap .PasswordEditBtn{
 	width: 10%;
 	background: #8f8ba5;
@@ -200,7 +204,7 @@ nav a {
     
 }
 
-.FormWrap .PersonEditBtn:hover{
+.FormWrap .PasswordEditBtn:hover{
 	background: #d1c19dbb;
 }
 /*收藏目錄*/
