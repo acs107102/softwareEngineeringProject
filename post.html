@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>文章</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--
+    <link rel="icon" href="./static/icon128.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+-->
+    <<link rel= "stylesheet" href= "./style.css">
+</head>
+
+<body>
+    <div class= "tabContent">
+        <div class="contentArea">
+            <div class= "content">
+        <table style="width: 100%;" Border= "3pt solid" cellpadding= 5>
+            <tr>
+                <td style="text-align: center">Post Title
+                </td>
+                <td rowspan= "2">
+                </td>
+                <td style="text-align: center">
+                    <table Border= "1pt solid" cellspacing= 15>
+                        <tr>
+                            <td class= "userHead">
+                                <a href={{ url_for('index') }}> 
+                                    <img src= "head0.jpg" alt= "head">
+                                </a>
+                            </td>
+                            <td style="width: 100%;">leave message</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table Border= "1pt solid" cellspacing= 15 style="width: 100%;">
+                        <tr>
+                            <td colspan= "4" style="height: 300px">
+                                content
+                            </td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td><button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-heart"></span> 愛心</button>
+                            </td>
+                            <td><button type="button" class="btn btn-warning">
+                                <span class="glyphicon glyphicon-star"></span> 收藏</button>
+                            </td>
+                            <td><button type="button" class="btn">
+                                <span class="glyphicon glyphicon-alert"></span> 檢舉</button>
+                            </td>
+                            <td>2020/11/05 15:36
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="overflow-X: hidden; overflow-y: auto;">
+                    <table Border= "1pt solid" cellspacing= 15 style="width: 100%;">
+                        <tr>
+                            <td rowspan="2" class= "userHead">
+                                <a href={{ url_for('index') }}> 
+                                    <img src= "head1.jpg" alt= "head">
+                                </a>
+                            </td>
+                            <td>user id</td>
+                        </tr>
+                        <tr>
+                            <td>user message</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+</body>
+</html>
